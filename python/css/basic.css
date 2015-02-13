@@ -1,0 +1,233 @@
+body{
+	text-align:center;
+	margin: 0 auto;
+	padding:0;
+}
+#main{
+	width:1000px;
+	height:800px;
+	margin-left:auto;    /* 左側マージンを自動的に空ける */
+	margin-right:auto;   /* 右側マージンを自動的に空ける */
+	text-align:left;  	
+}
+section{
+	margin-top:50px;
+}
+#contents{
+	margin-top:20px;
+}
+footer{
+	display:block;
+	font-family: 'Montserrat', serif;
+	text-align:right;
+	width:1000px;
+	background-color:gray;
+	color:white;
+	height:30px;
+}
+#copyright{
+	padding-top:5px;
+}
+a:hover img.enginer{
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    -ms-filter: "alpha( opacity=50 )";
+}
+#left_areatop{
+	float:left;
+	width:280px;
+	height:auto;
+}
+#right_areatop{
+	float:right;
+	width:720px;
+	height:auto;
+	
+}
+#left_area{
+	float:left;
+	text-align:left;
+	width:280px;
+	height:auto;
+	position:absolute;
+}
+#right_area{
+	float:right;
+	width:715px;
+	height:auto;
+}
+#right_area img{
+	margin:3px;
+}
+#right_areadb{
+	float:right;
+	width:720px;
+	height:auto;
+	
+}
+#right_areadb img{
+	margin:3px;
+}
+#right_areaweb{
+	float:right;
+	width:720px;
+	height:auto;
+	
+}
+#right_areaweb img{
+	margin:3px;
+}
+.bb_title {
+	background:url("../img/bnr01.jpg");
+	width:700px;
+	height:45px;
+	text-align:center;
+	color:white;
+	font-weight:bold;
+}
+.title_comm {
+	padding-top:12px;
+	font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
+	font-size:20px;
+}
+.sub_title {
+	background:url("../img/bnr02.jpg");
+	width:700px;
+	height:30px;
+	text-align:left;
+	color:#0167B9;
+	font-weight:bold;
+}
+.subtitle_comm {
+	padding-top:8px;
+	padding-left:40px;
+	font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
+	font-size:15px;
+}
+.lv_msg{
+	margin-left:20px;
+	margin-top:20px;
+	color:#3C3C3C;
+	line-height:250%;
+	width:680px;
+	height:auto;
+	margin-bottom:20px;
+}
+.msg{
+	margin-left:20px;
+	margin-top:20px;
+	color:#3C3C3C;
+	line-height:180%;
+	width:680px;
+	height:auto;
+	margin-bottom:20px;
+}
+.pg_title {
+	margin-left:20px;
+	background:url("../img/bnr03.jpg");
+	width:680px;
+	height:26px;
+	text-align:left;
+	color:gray;
+	font-weight:bold;
+}
+.pgtitle_comm {
+	padding-top:5px;
+	padding-left:20px;
+	font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
+	font-size:15px;
+}
+.ans_title {
+	margin-left:20px;
+	background:url("../img/bnr_pink.jpg");
+	width:680px;
+	height:26px;
+	text-align:left;
+	color:#F7C8CE;
+	font-weight:bold;
+}
+.anstitle_comm {
+	padding-top:5px;
+	padding-left:20px;
+	font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
+	font-size:15px;
+}
+
+#menu ul  {
+	list-style-type:none;
+	padding-left: 0;
+}
+#menu ul li {
+	padding-left: 0;
+    line-height: 100%;
+}
+
+
+
+
+
+ .clearfix:after {  
+   content: ".";   
+   display: block;   
+   height: 0;   
+   clear: both;   
+   visibility: hidden;  
+ }  
+ 
+ .clearfix { display: inline-table; }  
+   
+ /* Hides from IE-mac \*/  
+ * html .clearfix { height: 1%; }  
+ .clearfix { display: block; }  
+ /* End hide from IE-mac */  
+
+
+
+
+#front1 {
+	width:700px;
+	height:138px;
+}
+
+.refrect{
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#photo {
+	margin-left:150px;
+	z-index:1;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 100;
+	width: 700px;
+	height: 138px;
+}
+
+#illuminate {
+	margin-left:150px;
+	margin-top:100px;
+	z-index:2;
+	display: block;
+	position: absolute;
+	top: 0; 
+	left:100; //ココを#photoと同じに変更してあります。
+	width: 70px;
+	height: 138px;
+}
+
+/* Firefox hack start */
+@-moz-document url-prefix() {
+		#photo {
+				margin-top:50px;
+			}
+		#illuminate {
+				margin-top:100px;
+			}
+}
+/* Firefox hack end */

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="株式会社RJC,RJC,アールジェーシー,Java,JAVA,アウトソーシング,システム開発,オープン,web,プログラマ,SE,システムエンジニア,未経験" name="keywords">
+		<meta content="株式会社RJC採用サイトは、採用広告等において表現しきれない社員の様々な声や、お伝えした事などを応募者にお届けするサイトです。" name="description">
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<title>株式会社RJC　技術サイト</title>
+		<link rel="stylesheet" href="css/basic.css">
+		<link rel="stylesheet" href="css/table.css">
+		<script src="js/jquery-2.js "></script>
+		<script src="js/basic.js"></script>
+		<link href='css/css.css' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/shCore.js"></script>
+		<script type="text/javascript" src="js/shBrushJava.js"></script>
+		<link rel="stylesheet" href="css/shCore.css"/>
+		<link rel="stylesheet" href="css/shThemeDefault.css"/>
+		<script type="text/javascript" src="js/sticky.js"></script>
+		<script>
+			SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf';
+			SyntaxHighlighter.config.bloggerMode = true;
+			SyntaxHighlighter.defaults['auto-links'] = false;
+			SyntaxHighlighter.defaults['gutter'] = false;
+			SyntaxHighlighter.defaults['smart-tabs'] = false;
+			SyntaxHighlighter.defaults['tab-size'] = '4';
+			SyntaxHighlighter.all();
+			$(function () {
+				$("#menu p").click(function(){
+				    $(this).next("ul").slideToggle();
+				    $(this).toggleClass("open");
+				});
+				$('a img').hover(function(){
+					$(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+					}, function(){
+					if (!$(this).hasClass('currentPage')) {
+					$(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+					}
+				});
+				$("#menu").sticky({ topSpacing: 0, center:true, className:"hey" });
+			});
+
+			$(function(){
+			    $('a[href^=#]').click(function(){
+			        var speed = 500;
+			        var href= $(this).attr("href");
+			        var target = $(href == "#" || href == "" ? 'html' : href);
+			        var position = target.offset().top;
+			        $("html, body").animate({scrollTop:position}, speed, "swing");
+			        return false;
+			    });
+			});
+		</script>
+		<style>
+	    <!--
+			#menu ul {display:none;}
+	    -->
+	    </style>
+	</head>
+	<body >
+		<div id="main">
+			<header>
+				<div id="top"><a href="index.html"><img src="img/top_b.jpg" alt="サイトロゴ" /></a></div>
+			</header>
+			<div id="contents">
+				<div id="left_area">
+					<div id="menu">
+						サイドメニュー（省略）
+					</div>
+				</div>
+				<div id="right_area">
+					<div class="bb_title"><div class="title_comm">この章で行う学習内容</div></div>
+					<div class="lv_msg">
+						<a href="#no1">●XXXXXについて</a><br />
+						<a href="#no2">●XXXXXについて</a><br />
+					</div>
+<!-- 書く必要があるのはここから -->
+					<div id="no1">　</div><br />
+					<div class="bb_title"><div class="title_comm">XXXXX</div></div>
+					<div class="msg"></div>
+					<div class="sub_title"><div class="subtitle_comm">XXXXXとは？</div></div>
+					<div class="msg">
+						いろはにほへと説明文<br />
+						<b>わかよたれそ重要で<br />
+						うゐのおくやま重要で</b><br />
+						あさきゆめみし説明文<br />
+					</div>
+					<div class="pg_title"><div class="pgtitle_comm">構文</div></div>
+					<pre class="brush: java;">
+						def syntax(foo):
+							print "plz enter syntax"
+					</pre>
+					<div class="pg_title"><div class="pgtitle_comm">例文1</div></div>
+					<pre class="brush: java;">
+						def exsample(foo):
+							print "plz enter exsample"
+					</pre>
+					<div class="ans_title"><div class="anstitle_comm">出力結果1</div></div>
+					<pre class="brush: java;">plz enter exsample
+					</pre>
+					<div class="pg_title"><div class="pgtitle_comm">例文2</div></div>
+					<pre class="brush: java;">
+						def exsample2(foo):
+							if need_exsample_2:
+								print "plz enter exsample2"
+							else:
+								pass
+					</pre>
+					<div class="ans_title"><div class="anstitle_comm">出力結果2</div></div>
+					<pre class="brush: java;">plz enter exsample2
+					</pre>
+					<div class="msg">
+						<b>
+						例文の解説をしてあげるところ<br />
+						必要なければ書かなくてもいいよ。本当に必要なければ・・・ね？<br />
+						</b><br />
+					</div>
+					<div class="sub_title"><div class="subtitle_comm">後説</div></div>
+					<div class="msg">
+						寄り道したり補足説明をここに書いてねplz<br />
+					</div>
+					<div class="sub_title"><div class="subtitle_comm">後説2</div></div>
+					<div class="msg">
+						寄り道は１つとは限らないのだよ！<br />
+						寄り道のハシゴしたっていいんだぜ？。 <br />
+					</div>
+					<div class="buttonArea">
+						<a href="#top"><div class="top_button">TOPへ戻る</div></a>
+					</div>
+<!-- 書く必要があるのはここまで -->
+					<div id="no2">　</div><br />
+					以下no1と同じ
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<footer>
+				<div id="copyright">All Rights Reserved. Copyright RJC Co , Ltd 2013　</div>
+			</footer>
+		</div>
+	</body>
+</html>
